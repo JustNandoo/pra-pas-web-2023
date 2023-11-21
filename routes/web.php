@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CarsController;
 use App\Http\Controllers\MotorcyclesController;
+use App\Http\Controllers\TruckController;
 Route::get('/cars', [CarsController::class, 'index']);
 
 /*
@@ -40,6 +41,12 @@ Route::get('/cars/{car}', [CarsController::class, 'show']);
 
 Route::get('/motorcycles', [MotorcyclesController::class, 'index']);
 Route::get('/motorcycles/{motorcycles}', [MotorcyclesController::class, 'show']);
+
+Route::get('/truck', [TruckController::class, 'index']);
+Route::get('/truck/{truck}', [TruckController::class, 'show']);
+
+
+
 
 
 
